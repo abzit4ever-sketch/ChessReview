@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  width: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.bar {
+  width: 100%;
+  flex: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #1a1510;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,180,80,0.06);
+  min-height: 300px;
+}
+
+.black {
+  background: #1a1510;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.white {
+  background: #f0ede0;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 2px 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  font-family: 'Geist Mono', monospace;
+  z-index: 2;
+}
+
+.labelLight {
+  color: #1a1a2e;
+  background: rgba(240, 237, 224, 0.9);
+}
+
+.labelDark {
+  color: #f0ede0;
+  background: rgba(28, 28, 46, 0.9);
+}

@@ -1,0 +1,86 @@
+.wrapper {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,180,80,0.12) transparent;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 4px;
+}
+.wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255,180,80,0.14);
+  border-radius: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 1px 8px;
+}
+
+.moveNum {
+  font-size: 12px;
+  color: #6b5d4a;
+  min-width: 28px;
+  font-family: 'JetBrains Mono', monospace;
+  flex-shrink: 0;
+}
+
+.moveBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  color: #a09070;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  min-width: 64px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  flex: 1;
+}
+
+.moveBtn:hover:not(.active) {
+  background: rgba(255,180,80,0.05);
+  color: #d4c4a8;
+}
+
+.active {
+  color: #e8edf3 !important;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.san {
+  font-family: 'Geist Mono', monospace;
+  letter-spacing: -0.02em;
+}
+
+.symbol {
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: 1px;
+}
+
+.empty {
+  font-size: 12px;
+  color: #3a4556;
+  padding: 8px 16px;
+  text-align: center;
+  font-style: italic;
+}

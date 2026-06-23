@@ -1,0 +1,168 @@
+.container {
+  padding: 10px 14px;
+  border-top: 1px solid rgba(255,180,80,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Empty state */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0;
+}
+
+.emptyIcon {
+  font-size: 22px;
+  opacity: 0.4;
+}
+
+.emptyText {
+  font-size: 12px;
+  color: #3a4556;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.coachBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #b8a890;
+  background: rgba(255,180,80,0.07);
+  border: 1px solid rgba(255,180,80,0.15);
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.movePill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+
+.moveNum {
+  font-size: 11px;
+  color: #4a5568;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.moveSan {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f0e6d2;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.moveSymbol {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.moveLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* Comment */
+.comment {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #8896a8;
+  margin: 0;
+}
+
+/* Win probability bar */
+.winBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.winLabel {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  flex-shrink: 0;
+  min-width: 44px;
+}
+
+.winBarTrack {
+  flex: 1;
+  height: 6px;
+  background: rgba(28,28,46,0.8);
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.winBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, #e8e4d0, #c8c4b0);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+/* Best move */
+.bestMove {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  background: rgba(181,136,99,0.06);
+  border: 1px solid rgba(181,136,99,0.15);
+  border-radius: 8px;
+}
+
+.bestMoveLabel {
+  font-size: 11px;
+  color: #7a8a9a;
+}
+
+.bestMoveSan {
+  font-size: 13px;
+  font-weight: 700;
+  color: #d4a96a;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* PV line */
+.pvLine {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pvLabel {
+  font-size: 10px;
+  color: #3a4556;
+  flex-shrink: 0;
+  padding-top: 1px;
+  font-style: italic;
+}
+
+.pvMoves {
+  font-size: 10px;
+  color: #4a5568;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.5;
+}

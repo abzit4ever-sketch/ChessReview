@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.badge {
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(15,13,11,0.92);
+  border: 1px solid var(--badge-color, rgba(255,180,80,0.15));
+  border-radius: 20px;
+  padding: 5px 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4), 0 0 12px color-mix(in srgb, var(--badge-color) 20%, transparent);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.badgeLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--badge-color, #888);
+  letter-spacing: 0.03em;
+}
+
+.badgeCp {
+  font-size: 11px;
+  color: #4a5568;
+  font-family: 'Geist Mono', monospace;
+}
