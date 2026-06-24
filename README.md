@@ -6,7 +6,7 @@ A browser-based chess game analyzer powered by **Stockfish 18**. Import any PGN 
 ### Main-Menu
 ![Player Profile with Tactician Radar](screenshots/main-menu.png)
 
-### Team Profile - France
+### Game-Analysis Page
 ![Team Profile with Squad Roster](screenshots/analysis.png)
 ## Features
 
