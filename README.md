@@ -1,7 +1,13 @@
 # ChessReview ♟️
 
 A browser-based chess game analyzer powered by **Stockfish 18**. Import any PGN and get instant, move-by-move analysis with accuracy scores and evaluation graphs — no signup required.
+## Screenshots
 
+### Main-Menu
+![Player Profile with Tactician Radar](screenshots/main-menu.png)
+
+### Team Profile - France
+![Team Profile with Squad Roster](screenshots/analysis.png)
 ## Features
 
 - **📥 PGN Import** — Paste any PGN string to analyze
